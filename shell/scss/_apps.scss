@@ -1,0 +1,28 @@
+@use "./colors";
+
+#apps-container {
+  margin-left: 10px;
+  background-color: colors.$fg-disabled;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  .app-button {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 8px;
+
+    margin: 0;
+    border-radius: 0;
+
+    font-size: 14px;
+    color: colors.$fg-color;
+    background-color: transparent;
+
+    &:hover {
+      color: colors.$fg-semi-disabled;
+    }
+  }
+}
+

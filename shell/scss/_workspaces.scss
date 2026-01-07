@@ -1,0 +1,63 @@
+@use "./colors";
+
+.workspace-dot {
+  background-color: colors.$fg-disabled;
+  min-width: 10px;
+  border-radius: 10px;
+
+  padding: 0px;
+  margin-left: 4px;
+  margin-right: 4px;
+
+  transition: min-width 0.1s, background-color 0.2s;
+
+  &.focused {
+    min-width: 20px;
+  }
+
+  &.losing-focus {
+    animation: shrink 0.1s forwards;
+  }
+
+  &.gaining-focus {
+    animation: expand 0.1s forwards;
+  }
+
+  &-container {
+    min-height: 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+
+    &:hover > .workspace-dot {
+      background-color: colors.$fg-semi-disabled;
+    }
+  }
+}
+
+@keyframes expand {
+  from {
+    min-width: 10px;
+    background-color: colors.$fg-disabled;
+  }
+  to {
+    min-width: 20px;
+    background-color: colors.$fg-color;
+  }
+}
+
+@keyframes shrink {
+  from {
+    min-width: 20px;
+    background-color: colors.$fg-color;
+  }
+  to {
+    min-width: 10px;
+    background-color: colors.$fg-disabled;
+  }
+}

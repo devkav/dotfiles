@@ -1,0 +1,76 @@
+// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
+$fg-color: white;
+$fg-disabled: rgba(255, 255, 255, 0.2);
+$fg-semi-disabled: rgba(255, 255, 255, 0.75);
+// $bg-color: #{"@theme_bg_color"};
+
+window.Bar {
+  background: transparent;
+  color: $fg-color;
+  font-weight: bold;
+
+  button {
+    border-radius: 8px;
+    margin: 2px;
+  }
+
+  .workspace-dot {
+    background-color: $fg-disabled;
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 10px;
+
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+
+    transition: min-width 0.1s, background-color 0.2s;
+
+    &.focused {
+      min-width: 20px;
+    }
+
+    &.losing-focus {
+      animation: shrink 0.1s forwards;
+    }
+
+    &.gaining-focus {
+      animation: expand 0.1s forwards;
+    }
+
+    &-container {
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      background-color: transparent;
+
+      &:hover > .workspace-dot {
+        background-color: $fg-semi-disabled;
+      }
+    }
+  }
+}
+
+@keyframes expand {
+  from {
+    min-width: 10px;
+    background-color: $fg-disabled;
+  }
+  to {
+    min-width: 20px;
+    background-color: $fg-color;
+  }
+}
+
+@keyframes shrink {
+  from {
+    min-width: 20px;
+    background-color: $fg-color;
+  }
+  to {
+    min-width: 10px;
+    background-color: $fg-disabled;
+  }
+}

@@ -1,0 +1,12 @@
+@use "./colors";
+
+window.Bar {
+  background: transparent;
+  color: colors.$fg-color;
+  font-weight: bold;
+  min-height: 0px;
+
+  button {
+    transition: background-color 0.25s, color 0.25s;
+  }
+}

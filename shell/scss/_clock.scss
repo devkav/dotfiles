@@ -1,0 +1,15 @@
+@use "./colors";
+
+#clock {
+  border-radius: 0;
+  margin-right: 14px;
+
+  & .toggle {
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  &:hover {
+    color: colors.$fg-semi-disabled
+  }
+}
