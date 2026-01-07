@@ -3,7 +3,6 @@ import { createPoll } from "ags/time"
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
 const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
-console.log(MONTHS.length)
 
 export default function Clock() {
   const dateStr = createPoll("", 1000, (_) => {
