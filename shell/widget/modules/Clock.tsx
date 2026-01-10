@@ -15,7 +15,7 @@ export default function Clock() {
     let hour = total_hour % 12;
     if (hour == 0) {hour = 12}
     const minute = datetime.getMinutes().toString().padStart(2, '0');
-    const amPm = total_hour >= 13 ? "PM" : "AM";
+    const amPm = total_hour >= 12 ? "PM" : "AM";
 
     return `${day} ${month} ${date}  ${hour}:${minute} ${amPm}`
   })
