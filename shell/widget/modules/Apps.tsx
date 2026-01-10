@@ -1,5 +1,6 @@
-import { Gtk, } from "ags/gtk4"
-import { execAsync, subprocess } from "ags/process"
+import { Gtk } from "ags/gtk4"
+import { execAsync } from "ags/process"
+import Pointer from "../util/Pointer"
 
 export default function Apps() {
   const apps = [
@@ -18,7 +19,7 @@ export default function Apps() {
   return (
     <box name="apps-container" orientation={Gtk.Orientation.HORIZONTAL}>
       {apps.map(({icon, app}) => (
-        <button class="app-button" onClicked={() => onClick(app)}>{icon}</button>
+        <button class="app-button" onClicked={() => onClick(app)} cursor={Pointer}>{icon}</button>
       ))}
     </box>
   )

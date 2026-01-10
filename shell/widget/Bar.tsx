@@ -1,6 +1,5 @@
 import app from "ags/gtk4/app"
-import { Astal, Gtk, Gdk } from "ags/gtk4"
-import { createPoll } from "ags/time"
+import { Astal, Gdk } from "ags/gtk4"
 import Arch from "./modules/Arch"
 import Workspaces from "./modules/Workspaces"
 import Apps from "./modules/Apps"
