@@ -5,7 +5,6 @@ import Workspaces from "./modules/Workspaces"
 import Apps from "./modules/Apps"
 import Clock from "./modules/Clock"
 
-
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
