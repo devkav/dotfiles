@@ -4,7 +4,7 @@ import Pointer from "../util/Pointer"
 
 export default function Apps() {
   const apps = [
-    {icon: "", app: "dolphin"},
+    {icon: "", app: "nautilus"},
     {icon: "", app: "ghostty"},
     {icon: "", app: "chromium"},
     {icon: "", app: "spotify-launcher"},
@@ -13,7 +13,7 @@ export default function Apps() {
   ]
 
   const onClick = (app: string) => {
-    execAsync([app])
+    execAsync(app)
   }
 
   return (

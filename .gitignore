@@ -1,10 +1,16 @@
+GIMP/
 QtProject.conf
+baloofileinformationrc
 chromium/
 dconf/
 discord/
 dolphinrc
+filetypesrc
+fish/
 git/
 go/
+gtk-3.0/
+mimeapps.list
 mozilla/
 nvim/
 pavucontrol.ini
@@ -15,4 +21,5 @@ session/
 solaar/
 spotify/
 trashrc
+uv/
 waybar/
