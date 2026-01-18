@@ -11,8 +11,8 @@ export default function Arch() {
   const onHide = () => setOpen(false);
 
   return (
-      <button name="arch-icon" cursor={Pointer} onClicked={onClick}>
-        <box>
+    <button name="arch-icon" cursor={Pointer} onClicked={onClick}>
+      <box>
         <label label=""/>
         <popover visible={open} onHide={onHide}>
           <box orientation={Gtk.Orientation.VERTICAL}>
@@ -21,7 +21,7 @@ export default function Arch() {
             <MenuButton iconName="lock" label="Lock" command="hyprlock"/>
           </box>
         </popover>
-        </box>
-      </button>
+      </box>
+    </button>
   )
 }

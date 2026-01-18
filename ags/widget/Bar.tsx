@@ -4,6 +4,7 @@ import Arch from "./modules/Arch"
 import Workspaces from "./modules/Workspaces"
 import Apps from "./modules/Apps"
 import Clock from "./modules/Clock"
+import Audio from "./modules/Audio"
 
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
@@ -26,7 +27,12 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
         </box>
         <Workspaces $type="center" monitor={gdkmonitor}/>
         <box $type="end">
-          <Clock/>
+          <box>
+            <Audio/>
+          </box>
+          <box>
+            <Clock/>
+          </box>
         </box>
       </centerbox>
     </window>
