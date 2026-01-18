@@ -7,6 +7,6 @@ window.Bar {
   min-height: 0px;
 
   button {
-    transition: background-color 0.25s, color 0.25s;
+    transition: background-color 0.25s, color 0.25s, opacity 0.25s;
   }
 }
