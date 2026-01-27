@@ -1,0 +1,14 @@
+@use "./colors";
+@use "values";
+
+window {
+  background: transparent;
+  color: colors.$fg-color;
+  font-weight: bold;
+  min-height: 0px;
+
+  button {
+    transition: background-color values.$animation_speed, color values.$animation_speed, opacity values.$animation_speed;
+    background-color: transparent;
+  }
+}

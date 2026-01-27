@@ -1,0 +1,26 @@
+@use "./colors";
+@use "./values";
+
+#arch-icon {
+  font-size: 20px;
+  margin-left: 14px;
+  padding-right: 14px;
+  padding-left: 8px;
+  border-radius: 0;
+
+  &:hover {
+    color: colors.$fg-semi-disabled;
+  }
+}
+
+.menu-button {
+  transition: background-color values.$animation_speed;
+
+  &:hover {
+    background-color: colors.$bg-light-hover
+  }
+}
+
+.menu-button-icon {
+  margin-right: 6px;
+}

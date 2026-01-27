@@ -10,6 +10,7 @@ fish/
 git/
 go/
 gtk-3.0/
+gtk-4.0/
 mimeapps.list
 mozilla/
 nvim/
@@ -23,3 +24,5 @@ spotify/
 trashrc
 uv/
 waybar/
+io.hoppscotch.desktop/
+net.imput.helium/
