@@ -6,7 +6,7 @@ export default function Apps() {
   const apps = [
     {icon: "", app: "nautilus"},
     {icon: "", app: "ghostty"},
-    {icon: "", app: "helium"},
+    {icon: "", app: "/home/devan/Applications/Helium"},
     {icon: "", app: "spotify-launcher"},
     {icon: "", app: "steam"},
     {icon: "", app: "discord"},
